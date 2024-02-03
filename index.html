@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/9918320fb5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mystyle.css">
+
+      
+  <script>
+    function nazim() {
+      document.getElementById('Procedures').style.display = 'none'
+      document.getElementById('specialist').style.display = 'block'
+      document.getElementById('tab1').style.color = '#e37a47'
+      document.getElementById('tab2').style.color = '#626262'
+    }
+
+    function showspecialist() {
+      document.getElementById('Procedures').style.display = 'none'
+      document.getElementById('specialist').style.display = 'block'
+      document.getElementById('tab1').style.color = '#e37a47'
+      document.getElementById('tab2').style.color = '#626262'
+    }
+
+    function showProcedures() {
+      document.getElementById('specialist').style.display = 'none'
+      document.getElementById('Procedures').style.display = 'block'
+      document.getElementById('tab2').style.color = '#e37a47'
+      document.getElementById('tab1').style.color = '#626262'
+    }
+
+
+    function toggleAnswer(answerId) {
+    var answer = document.getElementById(answerId);
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+    } else {
+        answer.style.display = 'none';
+    }
+}
+
+
+
+
+    // faq code
+
+
+    // faq code end
+  </script>
+  <style>
+    /* Utility classes */
+.common-h2{
+  font-weight: bold;
+  font-size: 45px;
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.headpara{
+    font-weight: 500;
+
+}
+
+.design-rotate{
+    transform: rotate(45deg);
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 190px;
+    bottom: 8px;
+
+}
+.headtop{
+    background-color: #e4673f;
+    color: #fff;
+}
+.n-logo{
+    position: absolute;
+    background-color: #fff;
+    /* transform: skewX(-20deg); */
+    z-index: 12;
+
+}
+.nav-bar> .middle{
+    background-color: #025ca8;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+        /* transform: skewX(-20deg); */
+
+    justify-content: flex-end;
+    padding: 10px;
+}
+.nav-bar> .middle> .mid-link> .des-anc{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.nav-bar> .middle> .mid-link> .des-anc:hover{
+    font-weight: bold;
+}
+
+.nav-bar> .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: #227093;
+    justify-content: flex-end;
+}
+.nav-bar> .bottom> .des-anc{
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 7px;
+    color: #025ca8;
+    font-weight: 500;
+}
+.nav-bar> .bottom> .des-anc:hover{
+    font-weight: 700;
+}
+/* header end*/
+.mod-s-and-p{
+    /* margin: 20px; */
+    padding: 20px 10px;
+    border-radius: 10px;
+    color: #025ca8;
+}
+/* neelkant content secion */
+.content-btn{
+  background-color: #e4673f;
+  padding: 15px 30px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  margin: auto !important;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.content-btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* neelkant content secion end */
+/* Center of excellence */
+.center-and-excellence> .container{
+  background-color: #f3f7f9;
+  padding: 30px;
+}
+.center-and-excellence> .container> .CandE{
+width: 100%;
+height: 300px;
+
+}
+/* Center of excellence End */
+
+
+/* Specialities&Procedures */
+.mod-s-and-p:hover{
+    background-color: #025ca8;
+    color: #fff;
+}
+.mod-s-and-p:hover> img{
+  background-color: #fff;
+  border-radius: 10px;
+}
+.SpecialitiesProcedures{
+  padding: 10px 0px;
+}
+.SpecialitiesProcedures> img{
+  padding: 10px 0px;
+}
+
+
+/* Specialities&Procedures end */
+
+  
+
+  /* our doctors */
+  .our-doctors> .container{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;  }
+  .our-doctors> .container> .row> .col-md-4{
+    background-color: #f3f7f9;
+    padding: 10px;
+  }
+  .our-doctors> .container> .row> .col-md-8{
+    padding: 20px;
+  }
+
+  
+.n-card-container {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.n-card> img{
+width: 100%;
+}
+.n-card {
+  width: 210px;
+  /* margin: 10px; */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .n-card {
+      width: 100%;
+  }
+  .center-and-excellence> .container> .CandE{
+    height: 100px;
+  }
+  .common-h2{
+    font-size: 30px;
+  }
+}
+  /* our doctors end */
+
+
+/* chatgpt */
+.fAq {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #025ca8;
+    border-radius: 10px;
+    color: #eeeded;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1.4px solid grey;
+}
+
+.question {
+    /* color: #333; */
+
+    cursor: pointer;
+}
+
+.answer {
+    color: #025ca8;
+    display: none;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+
+
+/* State of art */
+.state-of-art> .container{
+  background-color: #f3f7f9;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;}
+/* State of art end */
+
+
+
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #141e30;
+    padding: 0 0 30px 0;
+    color: #ffffff;
+    font-size: 14px;
+    background: #141e30;
+  }
+  footer a{
+/* border-bottom: none; */
+text-decoration: none;
+  }
+  footer a:hover{
+    border-bottom: 1px solid white;
+    color: white!important;
+  }
+  
+  #footer .footer-newsletter {
+    padding: 50px 0;
+    background: #f1f6fe;
+    text-align: center;
+    font-size: 15px;
+  }
+  .foot-list-2{
+    position: relative;
+    bottom: 30px;
+  }
+  .foot-list-3{
+    position: relative;
+    bottom: 30px;
+  }
+  .foot-list-4{
+    position: relative;
+    bottom: 50px;
+  }
+  .sub-fu{
+    background-color: #e4673f;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  .sub-fu input{
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    border: none;
+  }
+
+  
+  #footer .footer-newsletter h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+  }
+  
+  #footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    text-align: left;
+  }
+  
+  #footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+  
+  #footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #106eea;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .footer-newsletter form input[type=submit]:hover {
+    background: #0d58ba;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #025ca8;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  .footer-contact p{
+    color: #fff !important;
+  }
+  .footer-contact a{
+    color: #fff !important;
+  }
+  
+  #footer .footer-top .footer-contact h3 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-contact h3 span {
+    color: #106eea;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #106eea;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #106eea;
+  }
+  
+.footer-form input{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.foot-form-button{
+  width: 100%;
+  border-radius: 50px;
+  padding: 4px;
+  background-color: #e4673f;
+  color: #fff;
+}
+  #footer .copyright {
+    text-align: center;
+    float: left;
+  }
+  
+  #footer .credits {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    color: #444444;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .portfolio .portfolio-wrap img {
+width: 100%; 
+   }
+    
+    #footer .copyright,
+    #footer .credits {
+      float: none;
+      text-align: center;
+      padding: 2px 0;
+    }
+    #main a{
+     
+      border: 1px solid white;
+      padding: 4px 6px;
+      text-decoration: none;
+      margin-right: 6px;
+      text-transform: capitalize;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+
+  </style>
+</head>
+
+
+<body onload="nazim()">
+  <!-- Header -->
+  <Header>
+    <div class="headtop text-center">
+      <p style="margin: 0%;" class="headpara p-2 text-capitalize">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+  <div class="nav-bar">
+    <img class="n-logo" src="https://www.neelkanthhospital.com/images/logo-new-r.webp" alt="">
+    <div class="middle">
+      <div class="design-rotate"></div>
+      <div class="mid-link">
+        <a class="des-anc">About</a>
+        <a class="des-anc">Our Team</a>
+        <a class="des-anc">Blog</a>
+        <a class="des-anc">Contact Us</a>
+        <a class="des-anc">+91 986665667</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <a class="des-anc">Home</a>
+      <a class="des-anc">Departments</a>
+      <a class="des-anc">Our Centers</a>
+
+      <div class="dropdown">
+        <button  class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <a class="des-anc">Health Check</a>
+      <a class="des-anc">Luxury Delivery</a>
+    </div>
+  </div>
+  </Header>
+  <!-- Header End -->
+  <!-- Slider Banner -->
+  <section class="nazbanner  mb-4">
+    <!-- <h1>Infinity Loop Banner</h1> -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class='w-100 d-block inthespotlightimage' src='./DR BINDU.jpg' alt='V2KART SPOTLIGHT' />
+        </div>
+        <div class="carousel-item">
+          <img class='w-100 d-block inthespotlightimage' src='./Neelkant banner 02.jpg' alt='V2KART SPOTLIGHT' />
+        </div>
+        <div class="carousel-item">
+          <img class='w-100 d-block inthespotlightimage' src='./thirdbanner.jpg'
+            alt='V2KART SPOTLIGHT' />
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Slider Banner End -->
+
+      <!--Specialities & Procedures  -->
+  <section class="SpecialitiesProcedures mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex">
+            <h3  id="tab1" onclick="showspecialist()" style="margin-right: 20px; cursor: pointer;">Specialist</h3>
+            <h3 style="cursor: pointer;" id="tab2" onclick="showProcedures()">Procedures</h3>
+          </div>
+          <hr />
+          <div id="specialist">
+            <div class="row">
+              <div class="col-md-6">
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/cancer%20care%20oncology.svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/The Da Vinci Xi Robotic Surgery.svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/cardia.svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Orthopaedics.svg"/> hello Specialist world</p>
+  
+              </div>
+              <div class="col-md-6">
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/The Da Vinci Xi Robotic Surgery.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Liver Transplant and bs.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Neurosciences.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Thoracic Surgery.svg"/> Specialist world</p>
+              </div>
+            </div>
+          </div>
+          <div id="Procedures">
+            <div class="row">
+              <div class="col-md-6">
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/procedure-new.svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Knee Replacement Surgery.svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Bone Marrow Transplant .svg"/> hello Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Thoracic%20Surgery.svg"/> hello Specialist world</p>
+  
+              </div>
+              <div class="col-md-6">
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Valvular%20Heart%20Surgery.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/The%20Da%20Vinci%20Xi%20Robotic%20Surgery.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/Lung%20Transplant.svg"/> Specialist world</p>
+                <p style="margin: 0px;" class="mod-s-and-p"><img src="https://www.maxhealthcare.in/img/LVAD.svg"/> Specialist world</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+<img src="https://www.maxhealthcare.in/img/doctor-consult-illustration.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--Specialities & Procedures End  -->
+
+    <!-- Neelkant content start -->
+    <section class="mt-5">
+      <div class="neel-content">
+        <div class="container">
+          <h2 class="common-h2">Neelkanth Hospital: Best IVF Centre in Gurgao</h2>
+          <p>Neelkanth Hospitals is amongst the most well known and the best IVF centre in Gurgaon ever since its foundation in 1991. Neelkanth strives to offer top-notch and end-to-end IVF services under one roof with utmost compassion, accountability, and transparency. Neelkanth has consistently delivered high success rates while prioritizing the overall health and well-being of all its patients and providing for them in a safe and caring environment. Through our cutting-edge technology and standardized and reliable lab conditions, we provide all patients with customisable IVF treatments, keeping in mind all necessary protocols.</p>
+          <p>We are one of the most trusted and best IVF centre in Gurgaon with state-of-the-art technologies and a highly experienced team of IVF experts who have time and again provided the best and most accurate fertility treatments in Gurgaon. They have an expertise in dealing with complex IVF cases and previously failed IVF treatments. The trained team of fertility experts, coaches, counselors, and co-ordinators ensure their level best to fulfill the dreams of thousands of patients suffering from male or female fertility disorders, helping them throughout their journeys, and turning their dreams into reality, while also maintaining economical prices and high ethics.</p>
+          <p>The chairman at Neelkanth Hospitals in Gurgaon is Dr. Himanshu Garg. And Dr. Bindu Garg is our IVF expert and the head of the IVF department. She has an unblemished experience of over 41 years in the field of IVF, and the first IVF baby in Gurgaon was delivered by her. She has successfully treated many couples with IVF and has a great track record. She has helped many couples achieve their dream of having a baby and has pioneered many innovative techniques that have made IVF one of the most successful treatments for infertility. Her experience and expertise make her one of the best IVF experts in Gurgaon and she is always willing to share her knowledge with patients, so they can achieve their dreams of becoming parents. Neelkanth Hospitals has 2 other branches, in Patna and in Delhi.</p>
+      <div class="but ">
+        <div class="naz" style="display: flex; flex-direction: row; justify-content: center;">
+        <a href="https://www.neelkanthhospital.com/contact.php"> <button class="content-btn">Book an Appointment</button></a> 
+        </div>
+      </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Neelkant content start End -->
+
+    <!-- center of excellence -->
+    <section class="center-and-excellence mt-5">
+      <div class="container">
+        <h2  class="common-h2 text-center">Center Of Excellence</h2>
+        <img class="CandE" src="./Screenshot 2024-02-03 121404.png" alt="">
+      </div>
+
+    </section>
+    <!-- center of excellence End  -->
+
+
+
+  <!-- Our doctorrs -->
+  <section class="mt-5">
+    <div class="our-doctors">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="common-h2">Our Doctors</h2>
+            <p>The bond between a patient and their doctor is priceless, and at Neelkanth, the best IVF centre in Gurgaon, we highly acknowledge this fact and value this relationship. Our carefully chosen team of doctors, surgeons, and experts ensure the best treatments available all throughout Gurgaon. Dr. Bindu Garg is the principal IVF expert who heads the IVF department at Neelkanth. She is among the best IVF doctors in Gurgaon with an unmatched experience of several years.</p>
+        <div class="n-card-container">
+          <div class="n-card">
+              <img src="https://www.neelkanthhospital.com/images/doc-1.webp"/>
+              <p style="color: #e4673f; font-weight: bold; margin: 0px;" class="text-center">Dr. Himanshu Garg</p>
+              <p style="color: #025ca8;" class="text-center">Chairperson, Neelkanth</p>
+          </div>
+  
+          <div class="n-card">
+              <img src="https://www.neelkanthhospital.com/images/doc-2.webp"/>
+              <p style="color: #e4673f; font-weight: bold; margin: 0px;" class="text-center">Dr Bindu Garg</p>
+              <p style="color: #025ca8;" class="text-center">Managing Director & Head of IVF Department</p>
+          </div>
+  
+          <div class="n-card">
+              <img src="https://www.neelkanthhospital.com/images/doc-3.webp"/>
+              <p style="color: #e4673f; font-weight: bold; margin: 0px;" class="text-center">Dr Pankhuri Garg</p>
+              <p style="color: #025ca8;" class="text-center">Chief Operating Officer</p>
+          </div>
+  
+          <!-- Add more cards as needed -->
+  
+      </div>
+          </div>
+          <div class="col-md-4">
+            <h2 class="text-center common-h2">Our Achivements</h2>
+            <h3 class="text-center common-h2" style="margin-top: 10px; color: #025ca8;">70+</h3>
+            <p class="text-center" style="font-weight: 600;">Years of Healthcare Legacy</p>
+            <h3 class="text-center common-h2" style="margin-top: 10px; color: #025ca8;">35+</h3>
+            <p class="text-center" style="font-weight: 600;">Years Of Experiences in Infertility</p>
+            <h3 class="text-center common-h2" style="margin-top: 10px; color: #025ca8;">20000+</h3>
+            <p class="text-center" style="font-weight: 600;">Babies delivered</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Our doctorrs  end-->
+
+  <!-- FAQ's start new -->
+  <section class="faw-main mt-5">
+
+    <h2 class="text-center common-h2">FAQs</h2>
+    <div class="container fAq">
+  
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer1')">1. Which is the best IVF centre in Gurgaon?</h5>
+          <p id="answer1" class="answer">A: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+  
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer2')">2. Which IVF centre in Gurgaon has the highest success rates?</h5>
+          <p id="answer2" class="answer">A: You can contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer3')">3. What is the cost of IVF treatment in Gurgaon?</h5>
+          <p id="answer3" class="answer">A: You can contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer4')">4. Is IVF procedure painful?</h5>
+          <p id="answer4" class="answer">A: You can contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer5')">5. How do I know if I am the appropriate candidate for IVF?</h5>
+          <p id="answer5" class="answer">A: You can contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer6')">6. Why choose Neelkanth for IVF treatment?</h5>
+          <p id="answer6" class="answer">A: You can contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+      <div class="faq-item">
+          <h5 class="question" onclick="toggleAnswer('answer7')">7. How long of a wait is recommended between a failed IVF cycle and trying again?</h5>
+          <p id="answer7" class="answer">A: You can Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, in. contact our customer support team by emailing support@example.com or calling 123-456-7890.</p>
+      </div>
+  
+      <!-- Add more FAQ items as needed -->
+  
+  </div>
+  </section>
+    <!-- FAQ's start end -->
+
+    <!-- State of art -->
+    <section class="mt-5 state-of-art">
+      <div class="container">
+        <h2 class="common-h2">State Of The Art IVF Facilities</h2>
+        <p>Neelkanth hospital is considered as one of the best IVF centres in Gurgaon. The hospital has a state-of-the-art IVF laboratory which offers a wide range of assisted reproductive technologies (ART) such as in vitro fertilization (IVF), intracytoplasmic sperm injection (ICSI), and preimplantation genetic diagnosis (PGD). The hospital also has a well-equipped nursery for pregnant women undergoing ART. The hospital provides round-the-clock support to its patients through an expert team of doctors, nurses, and support staff. Watch here what our patients has to say about us        </p>
+   <div class="naz" style="display: flex; flex-direction: row; justify-content: center;">
+   <a href="https://www.youtube.com/channel/UCLplNawkt6i584ZJvBcAfnQ"><button  class="content-btn">Watch Testimonials</button></a>  
+   </div>
+      </div>
+    </section>
+    <!-- State of art end -->
+
+<!-- Blogs and articles -->
+<section class="mt-5">
+  <div class="container">
+    <h2 class="common-h2 text-center">Blogs & Articles</h2>
+    <p class="text-center">Find the latest blogs and articles from our experts</p>
+    <img class="img-fluid" src="./Screenshot 2024-02-03 143744.png" alt="">
+  </div>
+</section>
+<!-- Blogs and articles End -->
+    <!-- Location -->
+    <section class="location mt-5">
+      <div class="container">
+        <img class="img-fluid" src="./Screenshot 2024-02-03 141713.png" alt="">
+      </div>
+    </section>
+    <!-- Location End -->
+    <!-- Footer logo part -->
+    <div class="top-foot-oart mt-5">
+      <div style="height: 20px; background-color: #025ca8;" class="f-div"></div>
+      <div style="height: 20px; background-color: #e4673f;" class="s-div"></div>
+      <div style="display: flex; flex-direction: row; justify-content: center; padding: 25px;">
+
+        <img src="https://www.neelkanthhospital.com/images/logo-new-r.webp" alt="">
+      </div>
+    </div>
+    <!-- Footer logo part End -->
+
+  <!-- ======= Footer ======= -->  
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+   <div class="row">
+    <div class="col-md-3">            <img style="background-color: #fff;" class="mb-2" src="https://www.neelkanthhospital.com/images/logo-new-r.webp" alt="" height="100px" width="200px"></h3>
+    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-4">          
+    </div>
+   </div>
+        <div class="row">
+          
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <p>Neelkanth Hospitals Private Limited, 1, Main Mehrauli-Gurgaon Road, D.L.F. Phase-III, Near Guru Dronacharya Metro Station, Gurgaon, HARYANA -122002<br>
+              <br>
+
+               
+          <a href="https://wa.me/0124-470-0500">   <strong>Phone: </strong>0124-470-0500 <br></a> 
+             <a href=""> <strong>Email: </strong>info@neelkanthhospital.com<br></a>
+            </p>
+            <img src="image.png" alt="">
+          </div>
+
+          <div class="col-md-2 footer-links foot-list-2">
+            <h4>Important Links</h4>
+
+            <ul>
+                 <li><i class="bx bx-chevron-right"></i> <a href="./index.html">IVF</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./aboutus.html">IUI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ICSI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="">Male Fertility</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Myomectomy Fertility</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Enlarged Prostate Gland Treatment</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 footer-links foot-list-3">
+            <h4>Quick Links</h4>
+
+            <ul>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="./Web-designing-course-in-mumbai.html">Training</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Best-Web-designing-course-in-noida.html">Laproscopy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Kidney Stones Treatment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./digital-marketting-course.html">Sports Injuries Treatment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./graphic-designing-course-in-noida.html">Gallbladder Stones Treatment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Total knee replacement Treatment</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5  footer-links foot-list-4">
+            <h3>REQUEST INFORMATION</h3>
+            <p>ENQUIRE NOW OR CALL : 0124-470-0500</p>
+            <div class="footer-form mt-3">
+          
+              <form action="connect.php" method="post">
+
+        
+                <input class="hidefixedfooter" style="color: #fda206;" type="text"   id="firstName" name="firstName" placeholder="Name" required/>
+                <input class="hidefixedfooter" style="color: #fda206;" type="text" id="lastName"name="lastName" placeholder="Course" required/>
+          
+                <input class="hidefixedfooter" style="color: #fda206;"  type="text" id="email" name="email" placeholder="E-mail" required/>
+           
+           
+                <input class="hidefixedfooter" style="color: #fda206;" type="number" id="number" name="number" placeholder="Phone no." required/>
+              <input class="foot-form-button" style="background-color: #e4673f;" type="submit" class="btn  px-4" />
+      
+            </form>
+            </div>
+          </div>
+
+        </div>
+        <div class="sub-fu">
+
+          <div class="row d-flex align-items-center">
+            <div class="col-md-4">  <div class="copyright">
+              <b>
+                &copy; Copyright <strong><span style="color:#ffffff">Neelkanth Hospitals </span><span style="color:rgb(255, 255, 255)">Private Limited.</span></strong><br>All Rights Reserved
+
+              </b>
+          </div></div>
+            <div class="col-md-4 d-flex">
+
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_FNmz4c.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+              <div style="position: relative; top: 30px;">
+          <b>  <p>Have a question? Call us 24/7 <br> <a class="text-light" href="">0124-470-0500</a></p></b>    
+              </div>
+            </div>
+            <div class="col-md-4">
+              <form action="" class="d-flex">
+ <input style="background-color: #ffffff; color: #e4673f;" type="text" placeholder="Enter Email">  
+  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_T1SlYO.json"  background="transparent"  speed="1"   style="width: 140px; height: 50px; position: relative; right: 80px;"  loop  autoplay></lottie-player>
+              </form>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- <hr> -->
+ 
+  </footer>
+  <!-- End Footer --> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
